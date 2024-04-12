@@ -14,6 +14,9 @@
       </label>
       <button>Add Number</button>
     </form>
+    <div class="rand-container">
+      <button id="randomNumber">Random Number</button>
+    </div>
     <main>
       <section id="numberBank">
         <h1>Number Bank</h1>
@@ -21,10 +24,26 @@
         <div>
           <button id="sortOne">Sort 1</button>
           <button id="sortAll">Sort All</button>
+          <p>OR Select how many numbers you'd like to sort</p>
+          <input
+            id="sortNumber"
+            name="sortNumber"
+            type="number"
+            min="0"
+            max="2"
+          />
+          <button id="selectedSort">Sort Selected Amount</button>
         </div>
       </section>
       <section id="sortedNumbers">
         <h1>Sorted Numbers</h1>
+        <label for="asc-desc">Select Ascending or Descending</label><br>
+        <select id="asc-desc" name="sortDirection">
+          <option value="Ascending">Ascending</option>
+          <option value="Descending">Descending</option>
+        </select>
+        <button id="update">Update</button>
+
         <section id="odds">
           <h2>Odds</h2>
           <output id="oddsOutput"></output>
