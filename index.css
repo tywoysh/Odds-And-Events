@@ -9,3 +9,19 @@ body {
     border: 1px solid black;
     border-radius: 3px;
   }
+
+#randomNumber {
+
+    margin-top: 10px;
+    align-items: center;
+}
+
+.rand-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#sortNumber {
+    width: 75px;
+}
